@@ -27,7 +27,7 @@ TopRoomBar::TopRoomBar(QWidget *parent)
 {
         setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         setMinimumSize(QSize(0, 65));
-        setStyleSheet("background-color: #fff; color: #171919;");
+//        setStyleSheet("background-color: #fff; color: #171919;");
 
         topLayout_ = new QHBoxLayout();
         topLayout_->setSpacing(10);
@@ -35,8 +35,8 @@ TopRoomBar::TopRoomBar(QWidget *parent)
 
         avatar_ = new Avatar(this);
         avatar_->setLetter(QChar('?'));
-        avatar_->setBackgroundColor(QColor("#d6dde3"));
-        avatar_->setTextColor(QColor("#555459"));
+//        avatar_->setBackgroundColor(QColor("#d6dde3"));
+//        avatar_->setTextColor(QColor("#555459"));
         avatar_->setSize(35);
 
         textLayout_ = new QVBoxLayout();
@@ -62,7 +62,7 @@ TopRoomBar::TopRoomBar(QWidget *parent)
         textLayout_->addWidget(topicLabel_);
 
         settingsBtn_ = new FlatButton(this);
-        settingsBtn_->setForegroundColor(QColor("#acc7dc"));
+//        settingsBtn_->setForegroundColor(QColor("#acc7dc"));
         settingsBtn_->setFixedSize(buttonSize_, buttonSize_);
         settingsBtn_->setCornerRadius(buttonSize_ / 2);
 

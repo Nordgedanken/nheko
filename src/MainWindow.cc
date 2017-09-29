@@ -36,7 +36,7 @@ MainWindow::MainWindow(QWidget *parent)
         setSizePolicy(sizePolicy);
         setWindowTitle("nheko");
         setObjectName("MainWindow");
-        setStyleSheet("QWidget#MainWindow {background-color: #fff}");
+//        setStyleSheet("QWidget#MainWindow {background-color: #fff}");
 
         restoreWindowSize();
         setMinimumSize(QSize(conf::window::minWidth, conf::window::minHeight));
@@ -168,7 +168,7 @@ MainWindow::showChatPage(QString userid, QString homeserver, QString token)
 
         if (spinner_ == nullptr) {
                 spinner_ = new LoadingIndicator(this);
-                spinner_->setColor("#acc7dc");
+//                spinner_->setColor("#acc7dc");
                 spinner_->setFixedHeight(120);
                 spinner_->setFixedWidth(120);
                 spinner_->start();

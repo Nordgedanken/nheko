@@ -47,7 +47,7 @@ TextInputWidget::TextInputWidget(QWidget *parent)
 
         setSizePolicy(QSizePolicy::Expanding, QSizePolicy::Fixed);
         setCursor(Qt::ArrowCursor);
-        setStyleSheet("background-color: #fff; height: 45px;");
+        setStyleSheet("height: 45px;");
 
         topLayout_ = new QHBoxLayout();
         topLayout_->setSpacing(2);
@@ -57,12 +57,12 @@ TextInputWidget::TextInputWidget(QWidget *parent)
         send_file_icon.addFile(":/icons/icons/clip-dark.png", QSize(), QIcon::Normal, QIcon::Off);
 
         sendFileBtn_ = new FlatButton(this);
-        sendFileBtn_->setForegroundColor(QColor("#acc7dc"));
+//        sendFileBtn_->setForegroundColor(QColor("#acc7dc"));
         sendFileBtn_->setIcon(send_file_icon);
         sendFileBtn_->setIconSize(QSize(24, 24));
 
         spinner_ = new LoadingIndicator(this);
-        spinner_->setColor("#acc7dc");
+//        spinner_->setColor("#acc7dc");
         spinner_->setFixedHeight(40);
         spinner_->setFixedWidth(40);
         spinner_->hide();
@@ -74,10 +74,10 @@ TextInputWidget::TextInputWidget(QWidget *parent)
         input_->setFixedHeight(45);
         input_->setFont(font);
         input_->setPlaceholderText(tr("Write a message..."));
-        input_->setStyleSheet("color: #333333; border-radius: 0; padding-top: 10px;");
+        input_->setStyleSheet("border-radius: 0; padding-top: 10px;");
 
         sendMessageBtn_ = new FlatButton(this);
-        sendMessageBtn_->setForegroundColor(QColor("#acc7dc"));
+//        sendMessageBtn_->setForegroundColor(QColor("#acc7dc"));
 
         QIcon send_message_icon;
         send_message_icon.addFile(
@@ -86,7 +86,7 @@ TextInputWidget::TextInputWidget(QWidget *parent)
         sendMessageBtn_->setIconSize(QSize(24, 24));
 
         emojiBtn_ = new EmojiPickButton(this);
-        emojiBtn_->setForegroundColor(QColor("#acc7dc"));
+//        emojiBtn_->setForegroundColor(QColor("#acc7dc"));
 
         QIcon emoji_icon;
         emoji_icon.addFile(":/icons/icons/smile.png", QSize(), QIcon::Normal, QIcon::Off);
