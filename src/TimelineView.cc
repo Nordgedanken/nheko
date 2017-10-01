@@ -369,6 +369,8 @@ TimelineView::init()
         QSettings settings;
         local_user_ = settings.value("auth/user_id").toString();
 
+        setBackgroundRole(QPalette::Base);
+
         top_layout_ = new QVBoxLayout(this);
         top_layout_->setSpacing(0);
         top_layout_->setMargin(0);

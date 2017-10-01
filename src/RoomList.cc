@@ -28,7 +28,7 @@ RoomList::RoomList(QSharedPointer<MatrixClient> client, QWidget *parent)
   : QWidget(parent)
   , client_(client)
 {
-        setStyleSheet("QWidget { border: none; }");
+        setStyleSheet("QWidget { border: none }");
 
         QSizePolicy sizePolicy(QSizePolicy::Expanding, QSizePolicy::Expanding);
         sizePolicy.setHorizontalStretch(0);

@@ -74,7 +74,7 @@ TextInputWidget::TextInputWidget(QWidget *parent)
         input_->setFixedHeight(45);
         input_->setFont(font);
         input_->setPlaceholderText(tr("Write a message..."));
-        input_->setStyleSheet("border-radius: 0; padding-top: 10px;");
+        input_->setStyleSheet("border-radius: 0; padding-top: 10px; background-color: rgba(0,0,0,0);");
 
         sendMessageBtn_ = new FlatButton(this);
 //        sendMessageBtn_->setForegroundColor(QColor("#acc7dc"));
